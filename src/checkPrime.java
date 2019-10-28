@@ -8,5 +8,6 @@ public class checkPrime {
 
         if (number < 2)
             System.out.println(number + " is not a prime");
+        if ()
     }
 }
