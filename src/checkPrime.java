@@ -6,8 +6,22 @@ public class checkPrime {
         System.out.println("Nhap So : ");
         int number = scanner.nextInt();
 
-        if (number < 2)
+        if (number < 2) {
             System.out.println(number + " is not a prime");
-        if ()
+        } else {
+            int i = 2;
+            boolean check = true;
+            while (i <= Math.sqrt(number)) {
+                if (number % i == 0) {
+                    check = false;
+                    break;
+                }
+                i++;
+            }
+            if (check)
+                System.out.println(number + " is a prime");
+            else
+                System.out.println(number + " is not a prime");
+        }
     }
 }
